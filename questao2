@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar as notas ao usuário
+        System.out.println("Digite as 4 notas do aluno:");
+        double nota1 = scanner.nextDouble();
+        double nota2 = scanner.nextDouble();
+        double nota3 = scanner.nextDouble();
+        double nota4 = scanner.nextDouble();
+
+        // Calcular a média
+        double media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        // Verificar a situação do aluno
+        if (media >= 7) {
+            System.out.println("Média: " + media);
+            System.out.println("Aluno aprovado sem recuperação.");
+        }
+        if (media < 7 && media >= 4) {
+            System.out.println("Média: " + media);
+            System.out.println("Aluno reprovado com direito a recuperação.");
+        }
+        if (media < 4) {
+            System.out.println("Média: " + media);
+            System.out.println("Aluno reprovado sem direito a recuperação.");
+        }
+
+        scanner.close();
+    }
+}
