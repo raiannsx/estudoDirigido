@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        // Definindo a string
+        String conteudoProduto = "Banana, Cajá, Goiaba, Uva, Morango, Pêra, Maçã, Damasco, Melão, Laranja";
+
+        // Imprimindo os conteúdos 1, 3 e 7
+        imprimirConteudo(conteudoProduto, 1);
+        imprimirConteudo(conteudoProduto, 3);
+        imprimirConteudo(conteudoProduto, 7);
+    }
