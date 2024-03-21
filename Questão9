@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        //A média dos números 8, 9 e 7
+        double primeiraMedia = (8 + 9 + 7) / 3.0;
+
+        //Calculando a média dos números 4, 5 e 6
+        double segundaMedia = (4 + 5 + 6) / 3.0;
+
+        //Calculando a soma das duas médias
+        double somaDasMedias = primeiraMedia + segundaMedia;
+
+        // Fazendo a média das médias
+        double mediaDasMedias = somaDasMedias / 2;
+
+        // Imprimindo os resultados
+        System.out.println("Média dos números 8, 9 e 7: " + primeiraMedia);
+        System.out.println("Média dos números 4, 5 e 6: " + segundaMedia);
+        System.out.println("Soma das duas médias: " + somaDasMedias);
+        System.out.println("Média das médias: " + mediaDasMedias);
+    }
+}
+
