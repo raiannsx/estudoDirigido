@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //Exibindo as opções de atendimento
+        System.out.println("Escolha uma das opções de atendimento:");
+        System.out.println("1 - Consultar saldo");
+        System.out.println("2 - Verificar o nome do usuário");
+        System.out.println("3 - Falar com um atendente");
+
+        //Lendo a opção escolhida pelo usuário
+        int opcao = scanner.nextInt();
+
+        //Verificando e executando a opção escolhida pelo usuário
+        if (opcao == 1) {
+            System.out.println("O saldo da sua conta é R$ 10.000.");
+        } else if (opcao == 2) {
+            System.out.println("O usuário cadastrado na conta é Lucas Almeida de Souza.");
+        } else if (opcao == 3) {
+            System.out.println("Você será encaminhado para um atendente.");
+        } else {
+            System.out.println("Opção inválida.");
+        }
+
+        scanner.close();
+    }
+}
